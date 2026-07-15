@@ -13,45 +13,54 @@
     <div class="brand">
       <span class="badge">007</span>
       <div>
-        <h1>Income Agent</h1>
-        <p>CLASSIFIED · OPERATOR BЕЖАЕВ</p>
+        <h1 id="titleMain">Income Agent</h1>
+        <p id="subtitleMain">CLASSIFIED · OPERATOR</p>
       </div>
     </div>
-    <div class="status" id="status">CONNECTING…</div>
+    <div class="top-right">
+      <select id="langPick" class="lang-pick" title="Language"></select>
+      <div class="status" id="status">CONNECTING…</div>
+    </div>
   </header>
 
   <main class="grid">
     <section class="panel dossier">
-      <h2>MISSION CONTROL</h2>
+      <h2 id="hMission">MISSION CONTROL</h2>
       <div class="actions">
         <button id="btnHunt">🔍 HUNT LEADS</button>
         <button id="btnRefresh">📋 REFRESH ORDERS</button>
         <button id="btnDash">📊 KPI</button>
         <button id="btnSheet" class="gold">📑 GOOGLE SHEET</button>
+        <button id="btnLang">🌐 LANGUAGE</button>
       </div>
       <pre id="log" class="log"></pre>
     </section>
 
     <section class="panel orders">
-      <h2>ACTIVE ORDERS</h2>
+      <h2 id="hOrders">ACTIVE ORDERS</h2>
       <div id="orders" class="order-list"></div>
     </section>
 
     <section class="panel comms">
-      <h2>TELEGRAM LINK</h2>
-      <p class="hint">Токен бота читается из <code>~/.grok/skills/income-agent/.env</code></p>
+      <h2 id="hTelegram">TELEGRAM LINK</h2>
+      <p id="envHint" class="hint">Bot token from ~/.grok/skills/income-agent/.env</p>
       <div id="tgInfo" class="tg-info"></div>
-      <h3>DISPATCH AGENT</h3>
+      <h3 id="hDispatch">DISPATCH AGENT</h3>
       <select id="orderPick"></select>
-      <div class="actions row">
-        <button id="btnGrok">→ GROK</button>
-        <button id="btnCodex">→ CODEX</button>
-        <button id="btnApprove" class="gold">✓ APPROVE</button>
+      <div class="actions row wrap">
+        <button id="btnApprove" class="gold">✅ APPROVE</button>
+        <button id="btnReject" class="danger">❌ REJECT</button>
+        <button id="btnEdit">✏ EDIT</button>
+        <button id="btnProject">📁 PROJECT</button>
+        <button id="btnManual">👤 MANUAL</button>
+        <button id="btnGrok">🤖 GROK</button>
+        <button id="btnCodex">💻 CODEX</button>
       </div>
     </section>
   </main>
 
-  <footer>AZIMUT OPERATIONS · NO OUTBOUND WITHOUT OPERATOR APPROVAL</footer>
+  <footer id="footerText">AZIMUT OPERATIONS · NO OUTBOUND WITHOUT OPERATOR APPROVAL</footer>
+  <script src="i18n.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

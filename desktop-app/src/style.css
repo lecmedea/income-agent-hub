@@ -40,6 +40,17 @@ html, body {
   background: linear-gradient(180deg, #0f1820, var(--bg));
 }
 .brand { display: flex; gap: 16px; align-items: center; }
+.top-right { display: flex; gap: 12px; align-items: center; }
+.lang-pick {
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--gold-dim);
+  padding: 6px 10px;
+  font-family: inherit;
+  font-size: 12px;
+}
+.actions.wrap { flex-wrap: wrap; }
+button.danger { border-color: var(--danger); color: #f4a0a8; }
 .badge {
   width: 52px; height: 52px;
   border: 2px solid var(--gold);
