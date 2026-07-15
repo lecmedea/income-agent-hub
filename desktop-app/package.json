@@ -1,0 +1,24 @@
+{
+  "name": "income-agent-007",
+  "productName": "Income Agent 007",
+  "version": "1.0.0",
+  "description": "Bond-style control panel for Income Agent",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --mac --dir",
+    "dist": "electron-builder --mac"
+  },
+  "build": {
+    "appId": "ru.azimut.income-agent-007",
+    "mac": {
+      "category": "public.app-category.business",
+      "target": ["dir"]
+    },
+    "directories": { "output": "dist" }
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  }
+}

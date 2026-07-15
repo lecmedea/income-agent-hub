@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Income Agent 007</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="scanlines"></div>
+  <header class="top">
+    <div class="brand">
+      <span class="badge">007</span>
+      <div>
+        <h1>Income Agent</h1>
+        <p>CLASSIFIED · OPERATOR BЕЖАЕВ</p>
+      </div>
+    </div>
+    <div class="status" id="status">CONNECTING…</div>
+  </header>
+
+  <main class="grid">
+    <section class="panel dossier">
+      <h2>MISSION CONTROL</h2>
+      <div class="actions">
+        <button id="btnHunt">🔍 HUNT LEADS</button>
+        <button id="btnRefresh">📋 REFRESH ORDERS</button>
+        <button id="btnDash">📊 KPI</button>
+        <button id="btnSheet" class="gold">📑 GOOGLE SHEET</button>
+      </div>
+      <pre id="log" class="log"></pre>
+    </section>
+
+    <section class="panel orders">
+      <h2>ACTIVE ORDERS</h2>
+      <div id="orders" class="order-list"></div>
+    </section>
+
+    <section class="panel comms">
+      <h2>TELEGRAM LINK</h2>
+      <p class="hint">Токен бота читается из <code>~/.grok/skills/income-agent/.env</code></p>
+      <div id="tgInfo" class="tg-info"></div>
+      <h3>DISPATCH AGENT</h3>
+      <select id="orderPick"></select>
+      <div class="actions row">
+        <button id="btnGrok">→ GROK</button>
+        <button id="btnCodex">→ CODEX</button>
+        <button id="btnApprove" class="gold">✓ APPROVE</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>AZIMUT OPERATIONS · NO OUTBOUND WITHOUT OPERATOR APPROVAL</footer>
+  <script src="app.js"></script>
+</body>
+</html>

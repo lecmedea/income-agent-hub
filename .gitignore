@@ -1,0 +1,6 @@
+.env
+daemon/.venv
+desktop-app/node_modules
+desktop-app/dist
+data/*.db
+**/.env
