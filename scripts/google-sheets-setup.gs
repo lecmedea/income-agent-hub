@@ -76,10 +76,11 @@ function setupSheetSkills_(ss) {
   const rows = [
     ['Skill / Repo', 'GitHub URL', 'Описание', 'Триггеры', 'Статус'],
     ['income-agent', 'https://github.com/lecmedea/income-agent-skills', 'Автономный поиск заказов', '/income-agent hunt', 'active'],
-    ['income-agent-schedule', '', 'Расписание без лишних токенов', 'schedule', 'active'],
-    ['russian-marketing-2026', '', 'Маркетинг РФ по трендам Чижова', 'маркетинг, SMM', 'new'],
-    ['income-agent-autonomy', '', 'Легальная автономия заработка', 'заработать', 'new'],
-    ['income-agent-hub', '', 'Telegram + Desktop пульт', 'Agent00AI', 'new'],
+    ['income-agent-schedule', 'https://github.com/lecmedea/income-agent-skills', 'Расписание без лишних токенов', 'schedule', 'active'],
+    ['russian-marketing-2026', 'https://github.com/lecmedea/income-agent-skills', 'Маркетинг РФ по трендам Чижова', 'маркетинг, SMM', 'active'],
+    ['income-agent-autonomy', 'https://github.com/lecmedea/income-agent-skills', 'Легальная автономия заработка', 'заработать', 'active'],
+    ['income-agent-hub', 'https://github.com/lecmedea/income-agent-hub', 'Telegram + Desktop пульт', 'Agent00AI', 'active'],
+    ['chrome-operator', 'https://github.com/lecmedea/chrome-operator', 'Автономный Chrome для Grok', 'chrome, sheets, github', 'active'],
   ];
   sh.getRange(1, 1, rows.length, rows[0].length).setValues(rows);
   sh.getRange(1, 1, 1, rows[0].length).setFontWeight('bold');
